@@ -1,11 +1,13 @@
 function setup() {
     createCanvas(800, 600);
     background(42, 56, 87);
+    var tan = "#e3ddbc"
+    var x = 100
 
     noStroke();
 
-    fill(227, 221, 188);
-    circle(100, 100, 50);
+    fill(tan);
+    circle(x, x, 50);
 
     fill(42, 56, 87);
     circle(125, 90, 50);
