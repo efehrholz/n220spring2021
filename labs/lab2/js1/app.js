@@ -3,7 +3,7 @@ let yPos = 300;
 
 //var x = -radius
 
-let xSpeed = 2;
+let xSpeed = 5;
 let ySpeed = 0;
 
 function setup() {
