@@ -1,9 +1,7 @@
 let xPos = 0;
 let yPos = 300;
 
-//var x = -radius
-
-let xSpeed = 5;
+let xSpeed = 2;
 let ySpeed = 0;
 
 function setup() {
@@ -12,6 +10,7 @@ function setup() {
 
 function draw() {
     background(181, 130, 110);
+
     xPos = xPos + xSpeed;
     yPos = yPos + ySpeed;
 
