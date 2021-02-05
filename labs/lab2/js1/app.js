@@ -1,19 +1,25 @@
-var radius = 50;
-var x = -radius;
-var speed = 0.5;
+let xPos = 0;
+let yPos = 300;
+
+//var x = -radius
+
+let xSpeed = 2;
+let ySpeed = 0;
 
 function setup() {
     createCanvas(800, 600);
-    fill(136, 227, 203);
-    noStroke();
-    ellipseMode(RADIUS);
 }
 
 function draw() {
-    background(224, 123, 0);
-    x += speed;
-    if (x > width+radius) { 
-        x = radius; 
+    background(181, 130, 110);
+    xPos = xPos + xSpeed;
+    yPos = yPos + ySpeed;
+
+    if (xPos > 850) {
+        xPos = 0;
     }
-    arc(x, 300, radius, radius, 0.52, 5.76)
+
+    fill(84, 192, 255);
+    noStroke();
+    circle(xPos, yPos, 50);
 }
