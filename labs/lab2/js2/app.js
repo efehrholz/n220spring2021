@@ -11,11 +11,11 @@ function draw() {
     background(50);
     noStroke();
 
-    if (mouseX, mouseY < 299) {
+    /*if (mouseX, mouseY < 299) {
         fill(84, 192, 255) //blue
     } else (mouseX, mouseY > 300) {
         fill(186, 56, 56) //red
-    }
+    } */
 
     ellipse(mouseX, mouseY, 25, 25);
 }
