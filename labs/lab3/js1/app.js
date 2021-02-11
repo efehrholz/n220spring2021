@@ -7,7 +7,7 @@ function setup() {
 
 function draw() {
     background(37, 41, 43);
-    //noStroke();
+    noStroke();
     
     for(let i=0; i<1225; i+=50) {
         fill(0);
