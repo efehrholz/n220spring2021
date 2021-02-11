@@ -1,15 +1,12 @@
-let i = 0;
+let x = 0;
 
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(800, 600);
 }
 
 function draw() {
-    //fill(255);
-    while (i < 5) {
-    console.log(i);
-    i++;
-    }
-    console.log(i);
+    background(37, 41, 43);
+    noStroke();
+
 }
