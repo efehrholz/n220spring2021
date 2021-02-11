@@ -6,8 +6,8 @@ function setup() {
 }
 
 function draw() {
-    //background(37, 41, 43);
-    noStroke();
+    background(37, 41, 43);
+    //noStroke();
     
     for(let i=0; i<1225; i+=50) {
         fill(0);
