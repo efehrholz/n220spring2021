@@ -7,27 +7,33 @@
 //Do not let the circles go beyond the bottom of the screen
 
 var radius = 10;
-//console.log(circleRadius);
+//console.log(radius);
 var y =[];
-//var colors = ["#848991", "#8296b5", "#82aded"]
 var yPos = 0;
+var xPos = 0;
 
 function setup() {
     createCanvas(800, 600);
 }
 
 function draw() {
-    background("##848991")
-    y[0] = mouseY //track Y location of mouse
+    background("##848991");
+    y[0] = mouseY; //track mouse at Y location
 
     for(var i=10; i>0; i--) { //initial circle
-        stroke(200 - (i*50));
-        circle(400, y[0], i*4)
+        circle(400, y[0], i*4);
     }
     
-    if(mouseIsPressed) {
-        circle(400, yPos+2, i*5)
-    } else {
-        circle(400, y[0], i*5)
+    if(yPos > 10) {
+        fill;
     }
+}
+
+function mousePressed() {
+    var i = 10;
+    if(mouseIsPressed) { //animate circle when mouse is pressed
+        circle(400, yPos++, i*5);
+    } else {
+        circle(400, y[0], i*5); //return mouse to yPos
+    } 
 }
