@@ -14,10 +14,10 @@ function draw() {
     dObj.y += dObj.velocityY;
     dObj.velocityY += gravity;
 
-    let sum = 20
-    for(i = 0; i < myYs.lengths; i++) {
+    //let sum = 20
+    //for(i = 0; i < myYs.lengths; i++) {
         //console.log(i)
         //let itemAtIndex = myYs[i];
         //sum += itemAtIndex
-    }
+    //}
 }
