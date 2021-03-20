@@ -31,7 +31,7 @@ function draw() {
 
 function mousePressed() {
     var i = 10;
-    if(mouseIsPressed) { //animate circle when mouse is pressed
+    if(mousePressed) { //animate circle when mouse is pressed
         circle(400, yPos++, i*5);
     } else {
         circle(400, y[0], i*5); //return mouse to yPos
